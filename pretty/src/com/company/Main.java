@@ -22,11 +22,11 @@ public class Main {
 
     /* Do not change code below */
     public static void main(String[] args) {
-        final Scanner scanner = new Scanner(System.in);
-
-        int from = scanner.nextInt();
-        int to = scanner.nextInt();
-
-        System.out.println(sumInRange(from, to));
+        int i = Integer.parseInt(args[1]);
+        int j = Integer.parseInt(args[2]);
+        if (args[0] == "+") { System.out.println(i+j); }
+        else if (args[0] == '*') { System.out.println(j*i); }
+        else if (args[0] == '-') { System.out.println(i-j); }
+        else { System.out.println("Unknown operator"); }
     }
 }
